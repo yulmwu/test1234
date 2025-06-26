@@ -1,0 +1,14 @@
+name: Test Workflow
+on: push
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First Check
+        run: |
+          ls -al
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Second Check 
+        run: |
+          ls -al
